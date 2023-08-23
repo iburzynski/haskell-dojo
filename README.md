@@ -1,1 +1,1 @@
-# haskell-dojo
+# 🏯 **Haskell Dojo** 🥷
