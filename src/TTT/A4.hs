@@ -3,7 +3,7 @@ module TTT.A4 where
 import Data.List (transpose)
 import TTT.A1
 import TTT.A2
-import TTT.A3 (putSquare)
+import TTT.A3 (getAllLines, putSquare)
 
 -- *** Assignment 4-1 *** --
 
