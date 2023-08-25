@@ -1,16 +1,9 @@
 module TTT.A4 where
 
+import Data.List (transpose)
 import TTT.A1
 import TTT.A2
-import TTT.A3 hiding
-  ( dropFirstCol,
-    dropLastCol,
-    formatRows,
-    isWinningLine,
-    prependRowIndices,
-    showSquares,
-    _HEADER_,
-  )
+import TTT.A3 (putSquare)
 
 -- *** Assignment 4-1 *** --
 
