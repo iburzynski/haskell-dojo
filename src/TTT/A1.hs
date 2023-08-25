@@ -44,10 +44,14 @@ data GameState = XWon | OWon | Tie | InProgress
 -- Q#08
 
 type Player = Square
-type Row    = [Square]
-type Line   = [Square]
-type Board  = [Row]
-type Move   = (Int, Int)
+
+type Row = [Square]
+
+type Line = [Square]
+
+type Board = [Row]
+
+type Move = (Int, Int)
 
 -- Q#09
 
@@ -63,10 +67,10 @@ getFirstPlayer_ b
 
 showGameState :: GameState -> String
 showGameState gs = case gs of
-    XWon -> "Player X wins!"
-    OWon -> "Player O wins!"
-    Tie  -> "Tie game!"
-    _    -> "Game is in progress"
+  XWon -> "Player X wins!"
+  OWon -> "Player O wins!"
+  Tie -> "Tie game!"
+  InProgress -> "Game is in progress"
 
 -- Q#11
 
