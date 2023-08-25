@@ -7,83 +7,48 @@ import TTT.A1
 
 -- Q#01
 
-promptPlayer :: Player -> String
-promptPlayer p =
-  concat
-    [ "Player ",
-      showSquare p,
-      "'s turn: enter a row and column position (ex. A1)"
-    ]
+promptPlayer = undefined
 
 -- Q#02
 
-_RANGE_ :: [Int]
-_RANGE_ = [0 .. _SIZE_ - 1]
+_RANGE_ = undefined
 
 -- Q#03
 
-isDigit :: Char -> Bool
-isDigit c = c `elem` ['0' .. '9']
+isDigit = undefined
 
-readDigit :: Char -> Int
-readDigit c = if isDigit c then read [c] else -1
+readDigit = undefined
 
 -- Q#04
 
-_EMPTY_ROW_ :: Row
-_EMPTY_ROW_ = replicate _SIZE_ E
+_EMPTY_ROW_ = undefined
 
-_EMPTY_BOARD_ :: Board
-_EMPTY_BOARD_ = replicate _SIZE_ _EMPTY_ROW_
+_EMPTY_BOARD_ = undefined
 
 -- Q#05
 
-isTied :: Board -> Bool
-isTied b = E `notElem` concat b
+isTied = undefined
 
-_TIED_BOARD_ :: Board
-_TIED_BOARD_ =
-  [ [X, O, E],
-    [O, X, X],
-    [O, X, O]
-  ]
+_TIED_BOARD_ = undefined
 
 -- Q#06
 
-indexRowStrings :: [String] -> [(Char, String)]
-indexRowStrings rowStrs = zip ['A' ..] rowStrs
+indexRowStrings = undefined
 
 -- Q#07
 
-formatLine :: [String] -> String
-formatLine strs =
-  concat
-    [ _SEP_,
-      intercalate _SEP_ strs,
-      _SEP_
-    ]
+formatLine = undefined
 
 -- *** Assignment 2-2 *** --
 
 -- Q#08
 
-isMoveInBounds :: Move -> Bool
-isMoveInBounds (r, c) =
-  and [r >= 0, r <= _SIZE_ - 1, c >= 0, c <= _SIZE_ - 1]
+isMoveInBounds = undefined
 
 -- Q#09
 
-stringToMove :: String -> Move
-stringToMove [x, y] = (convertRowIndex x, readDigit y)
-stringToMove _ = _INVALID_MOVE_
+stringToMove = undefined
 
 -- Q#10
 
-replaceSquareInRow :: Player -> Int -> Row -> Row
-replaceSquareInRow p j r = xs ++ ys'
-  where
-    (xs, ys) = splitAt j r
-    ys'
-      | null ys = []
-      | j < 0 = ys
-      | otherwise = p : tail ys
+replaceSquareInRow = undefined
