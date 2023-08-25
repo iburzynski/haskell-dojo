@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+vscode:
+  extensions:
+    - haskell.haskell
+    - justusadam.language-haskell
+    - dracula-theme.theme-dracula
+    - vscode-icons-team.vscode-icons

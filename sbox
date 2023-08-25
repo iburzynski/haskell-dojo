@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cabal exec ghci src/Sandbox.hs

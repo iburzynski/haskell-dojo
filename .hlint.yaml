@@ -1,0 +1,7 @@
+- ignore: {name: Eta reduce }
+- ignore: {name: Use camelCase }
+- ignore: {name: Use map }
+- ignore: {name: Use map foldr }
+- ignore: {name: Use concatMap }
+- ignore: {name: Use any }
+- ignore: {name: Avoid lambda }

@@ -1,0 +1,43 @@
+cabal-version:      2.4
+name:               haskell-dojo
+version:            0.1.0.0
+synopsis:           See README for more info
+tested-with:        GHC==8.10.7
+
+description:        
+homepage:           https://github.com/iburzynski/haskell-dojo
+license:            MIT
+license-file:       LICENSE
+author:             Ian Burzynski
+maintainer:         23251244+iburzynski@users.noreply.github.com
+
+category:           Example
+extra-source-files:
+    .hlint.yaml
+    CHANGELOG.md
+    README.md
+
+executable haskell-dojo
+    main-is: Main.hs
+    other-modules:
+        TTT.A1
+      , TTT.A2
+      , TTT.A3
+      , TTT.A4
+      , TTT.A5
+      , HM.A6
+      , HM.A7
+      , HM.A8
+      , HM.Provided
+      , Sandbox
+    build-depends:
+        base
+      , containers
+      , directory
+      , random
+    hs-source-dirs:
+        app
+      , src
+    default-extensions:
+        ImportQualifiedPost
+    default-language: Haskell2010
