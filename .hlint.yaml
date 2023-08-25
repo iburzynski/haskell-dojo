@@ -5,3 +5,4 @@
 - ignore: {name: Use concatMap }
 - ignore: {name: Use any }
 - ignore: {name: Avoid lambda }
+- ignore: {name: Use <$> }

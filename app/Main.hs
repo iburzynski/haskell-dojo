@@ -4,7 +4,7 @@ import Data.Foldable (traverse_)
 import Data.Map.Strict (Map)
 import Data.Map.Strict qualified as Map
 import HM.A8 (runHM)
-import System.IO (BufferMode (..), hSetBuffering, stdout)
+import System.IO (BufferMode (..), hSetBuffering, stdout, stdin)
 import TTT.A5 (runTTT)
 import Text.Printf (printf)
 import Text.Read (readMaybe)
@@ -37,13 +37,13 @@ main = do
     menu :: IO ()
     menu =
       do
+        hSetBuffering stdin NoBuffering
+        hSetBuffering stdout NoBuffering
         putStrLn "λ SELECT APPLICATION:\n"
         traverse_ printApp $ Map.toList apps
         putStrLn ""
-        hSetBuffering stdout NoBuffering
         putStr "λ "
         c <- getChar
-        hSetBuffering stdout LineBuffering
         putStrLn ""
         let notFound = putStrLn "Invalid selection: try again.\n" >> menu
         maybe notFound runApp $ parseChoice apps c
