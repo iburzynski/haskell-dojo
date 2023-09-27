@@ -1,9 +1,11 @@
 module HM.A8 where
 
-import Control.Monad
-import HM.A6 hiding (validateNoDict, validateWithDict)
-import HM.A7
+import Control.Monad (when)
+import Data.Char (toUpper)
+import HM.A6
+import HM.A7 hiding (validateNoDict, validateWithDict)
 import HM.Provided
+import System.Directory (doesFileExist)
 
 -- Q#01
 
