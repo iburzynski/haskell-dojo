@@ -4,21 +4,60 @@ import Data.Char (toUpper)
 import HM.A6
 import HM.Provided
 import System.Directory (doesFileExist)
-
--- *** A7: Functors & Applicatives *** --
+import Data.List (intersperse, sort)
 
 -- Q#01
-
-getUpperChar = undefined
+data Game
 
 -- Q#02
 
-_DICT_ = undefined
+repeatedMove = undefined
 
 -- Q#03
 
-makeGameIfValid = undefined
+makeGame = undefined
 
 -- Q#04
 
-getDict = undefined
+updateGame = undefined
+
+-- Q#05
+
+showGameHelper :: String -> [Char] -> Int -> String
+showGameHelper game moves chances =
+  unlines
+    [ _STARS_,
+      "\tSecret Word:\t" ++ intersperse ' ' game ++ "\n",
+      "\tGuessed:\t" ++ intersperse ' ' (sort moves) ++ "\n",
+      "\tChances:\t" ++ show chances,
+      _STARS_
+    ]
+
+-- Q#06
+
+
+-- Q#07
+
+toMaybe = undefined
+
+-- Q#08
+
+validateSecret = undefined
+
+-- Q#09
+
+hasValidChars = undefined
+
+isValidLength = undefined
+
+isInDict = undefined
+
+-- Q#10
+
+validateNoDict = undefined
+
+validateWithDict = undefined
+
+-- Q#11
+
+processTurn = undefined
