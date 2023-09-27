@@ -7,46 +7,64 @@ import TTT.A3 (getAllLines, putSquare)
 
 -- Q#01
 
-_HEADER_ = undefined
+_HEADER_ :: String
+_HEADER_ = ' ' : formatLine (map show _RANGE_)
 
 -- Q#02
 
-showSquares = undefined
+showSquares :: [Square] -> [String]
+showSquares xs = map showSquare xs
 
 -- Q#03
 
-dropFirstCol = undefined
+dropFirstCol :: Board -> Board
+dropFirstCol b = map tail b
 
 -- Q#04
 
-dropLastCol = undefined
+dropLastCol :: Board -> Board
+dropLastCol b = map init b
 
 --Q#05
 
-formatRows = undefined
+formatRows :: [Row] -> [String]
+formatRows rs = map (\r -> formatLine (map showSquare r)) rs
 
 -- Q#06
 
-isWinningLine_ = undefined
+isWinningLine_ :: Player -> Line -> Bool
+isWinningLine_ p l = not (null l) && null (filter (/= p) l)
 
 -- Q#07
 
-isWinningLine = undefined
+isWinningLine :: Player -> Line -> Bool
+isWinningLine p l = not (null l) && foldr (\s acc -> acc && s == p) True l
 
 -- Q#08
 
-hasWon = undefined
+hasWon :: Player -> Board -> Bool
+hasWon p b = foldr (\l acc -> acc || isWinningLine p l) False $ getAllLines b
 
 -- Q#09
 
-getGameState = undefined
+getGameState :: Board -> GameState
+getGameState b
+  | hasWon X b = XWon
+  | hasWon O b = OWon
+  | isTied b = Tie
+  | otherwise = InProgress
 
-playMove = undefined
+playMove :: Player -> Board -> Move -> (GameState, Board)
+playMove p b m = (getGameState b', b')
+  where
+    b' = putSquare p b m
 
 -- Q#10
 
-prependRowIndices = undefined
+prependRowIndices :: [String] -> [String]
+prependRowIndices ss = zipWith (:) ['A' ..] ss
 
 -- Q#11
 
-formatBoard = undefined
+formatBoard :: Board -> String
+formatBoard b = unlines . (_HEADER_ :) . prependRowIndices $ formatRows b
