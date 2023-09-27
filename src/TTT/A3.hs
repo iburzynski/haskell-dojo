@@ -4,8 +4,6 @@ import Data.List (transpose)
 import TTT.A1
 import TTT.A2
 
--- *** Assignment 3-1 ***
-
 -- Q#01
 
 showInts = undefined
@@ -37,8 +35,6 @@ getDiag1 = undefined
 getDiag2 = undefined
 
 getAllLines = undefined
-
--- *** Assignment 3-2 ***
 
 -- Q#07
 

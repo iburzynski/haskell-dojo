@@ -2,8 +2,6 @@ module TTT.A1 where
 
 import Data.Char (toUpper)
 
--- *** Assignment 1-1 *** --
-
 -- Q#01
 
 _SIZE_ = undefined
@@ -23,8 +21,6 @@ _INVALID_MOVE_ = undefined
 -- Q#05
 
 _SEP_ = undefined
-
--- *** Assignment 1-2 *** --
 
 -- Q#06
 

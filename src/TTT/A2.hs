@@ -3,8 +3,6 @@ module TTT.A2 where
 import Data.List (intercalate)
 import TTT.A1
 
--- *** Assignment 2-1 *** --
-
 -- Q#01
 
 promptPlayer = undefined
@@ -38,8 +36,6 @@ indexRowStrings = undefined
 -- Q#07
 
 formatLine = undefined
-
--- *** Assignment 2-2 *** --
 
 -- Q#08
 

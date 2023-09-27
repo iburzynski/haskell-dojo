@@ -5,8 +5,6 @@ import TTT.A1
 import TTT.A2
 import TTT.A3 (getAllLines, putSquare)
 
--- *** Assignment 4-1 *** --
-
 -- Q#01
 
 _HEADER_ = undefined
@@ -30,8 +28,6 @@ formatRows = undefined
 -- Q#06
 
 isWinningLine_ = undefined
-
--- *** Assignment 4-2 *** --
 
 -- Q#07
 
