@@ -1,7 +1,6 @@
 module HM.A6 where
 
-import Data.Char (isAlpha, toLower, toUpper)
-import Data.List (intersperse, sort)
+import Data.Char (isAlpha)
 import HM.Provided
 
 -- Q#01
