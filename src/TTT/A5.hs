@@ -7,8 +7,6 @@ import TTT.A2
 import TTT.A3
 import TTT.A4
 
--- *** Assignment 5-1 *** --
-
 -- Q#01
 
 printBoard = undefined
@@ -37,8 +35,6 @@ play = undefined
 
 runTTT :: IO ()
 runTTT = putStrLn "Not implemented... yet!"
-
--- *** Assignment 5-2 *** --
 
 -- Q#07
 
