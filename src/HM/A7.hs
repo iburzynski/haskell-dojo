@@ -1,6 +1,6 @@
 module HM.A7 where
 
-import Data.Char (toUpper)
+import Data.Char (isAlpha, toLower, toUpper)
 import HM.A6
 import HM.Provided
 import System.Directory (doesFileExist)
