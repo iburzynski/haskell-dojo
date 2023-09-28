@@ -6,3 +6,4 @@
 - ignore: {name: Use any }
 - ignore: {name: Avoid lambda }
 - ignore: {name: Use <$> }
+- ignore: {name: Redundant if }

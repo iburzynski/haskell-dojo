@@ -13,7 +13,12 @@ getUpperChar = undefined
 
 -- Q#02
 
-_DICT_ = undefined
+_DICT_ = do
+  fileExists <- doesFileExist _DICT_FILE_
+  if fileExists then undefined else undefined
+
+isDictNonEmpty :: IO Bool
+isDictNonEmpty = undefined
 
 -- Q#03
 
