@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Dracula",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "vs-seti",
   "haskell.plugin.ghcide-type-lenses.globalOn": false,
   "haskell.plugin.importLens.codeLensOn": false,
   // "haskell.manageHLS": "GHCup",

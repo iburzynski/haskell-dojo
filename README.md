@@ -26,6 +26,14 @@ GITHUB_ID="iburzynski"
 ```
 5. Enter `refresh` in your terminal session. Your forked `haskell-dojo` should now automatically clone itself into the `jambhala` directory (and will be ignored by `git`). Exit the editor and reopen it in the `haskell-dojo` directory by running `jcode haskell-dojo` (use this same command from the `jambhala` directory in your terminal each time to ensure proper functioning).
 
+6. When you open a Haskell file—having an .HS file name extension—for the first time, VSCodium prompts you to select how to manage or discover HLS and the relevant toolchain. When prompted, select **Manually via PATH**.
+
+    <p style="font-weight: bold; text-align: center;">OR</p>
+
+    If you are not prompted, then click the **View** menu, then click **Extensions**, then select the **Haskell** extension, then click the **Gear** icon labelled Manage, and then click **Extension Settings**. Click the drop-down arrow next to the **Haskell: Manage HLS** field, and then select **PATH**. Close the **Settings** tab, and then close the **Extension: Haskell** tab.
+
+7. To add extensions to VSCodium included in the Jambhala development suite, see [Adding Extensions to Jambhala Editor](https://github.com/iburzynski/jambhala#adding-extensions-to-jambhala-editor).
+
 ### **With Gitpod**
 This repository contains a preconfigured Gitpod Haskell development environment, allowing you to start coding in Haskell with zero installation using [Gitpod](https://www.gitpod.io/) and a browser-based version of VS Code.
 
