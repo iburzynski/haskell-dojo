@@ -36,6 +36,13 @@ If you're looking to dive into Haskell quickly and aren't ready to commit to a l
 4. Wait for the environment to build. This can take a while the first time.
 5. Select "VS Code Browser" as your editor.
 
+>**Note:** you may need to enable additional permissions to allow GitPod to push changes to your forked repository.
+>1. Go to https://gitpod.io (login with your GitHub account if not already logged in)
+>2. Click your user avatar image in the top right and select `User Settings` from the dropdown menu.
+>3. Select `Git Providers` from the left menu, find `GitHub` and click the three dots to the right, then `Edit Permissions`.
+>4. Check the box next to `public_repo` and click `Update Permissions`.
+>You should now be able to push committed changes to your repository from the GitPod VS Code editor.
+
 ### **With a Local Haskell Installation**
 This repository can also be used with a local Haskell toolchain installation through [GHCup](https://www.haskell.org/ghcup/) and either VS Codium or VS Code. This method may not be ideal for new Haskellers, as correct configuration to get Haskell to work properly in VS Code can be tricky and delay the process of actually learning Haskell. Having a system-wide Haskell installation can also occasionally cause conflicts with Haskell Nix development environments, such as used by Jambhala. For these reasons it is recommended to use the Jambhala suite (if you're learning Haskell for Cardano development) or Gitpod instead.
 
