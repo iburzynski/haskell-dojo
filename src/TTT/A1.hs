@@ -20,7 +20,7 @@ _INVALID_MOVE_ = (-1,-1)
 
 -- Q#05
 
-_SEP_ = undefined
+_SEP_ = ['_','|','_']
 
 -- Q#06
 
