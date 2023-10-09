@@ -56,21 +56,18 @@ getFirstPlayer_ isX
 
 showGameState = GameState -> String
 showGameState gState = case gState of
-    X -> "X Won the game"
-    O-> "O Won the game"
+    X -> "Player X Won the game"
+    O-> "Player O Won the game"
     Tie -> "The game is a tie"
     In_Progress -> "The game is in progress"
-    _
-getStarted_Case t = case t of   
-    "fire" -> "Charmander"
-    "water" -> "Squirtel"
-    "grass" -> "Bulbasaur"
-    _       -> "Pikachu"
-
+    _           -> 
 
 -- Q#11
 
-switchPlayer = undefined
+switchPlayer = Player -> Player
+switchPlayer X = O
+switchPlayer O = X
+switchPlayer x = x
 
 -- Q#12
 
