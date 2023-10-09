@@ -1,6 +1,7 @@
 module TTT.A1 where
 
 import Data.Char (toUpper)
+import Data.Sequence.Internal.Sorting (QList(Nil))
 
 -- Q#01
 _SIZE_ :: Int
@@ -24,7 +25,8 @@ _SEP_ = ['_','|','_']
 
 -- Q#06
 
-data Square
+data Square = X| O|Nil
+ deriving show
 
 -- Q#07
 
