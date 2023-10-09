@@ -1,6 +1,6 @@
 module TTT.A1 where
 
-import Data.Char (toUpper)
+import Data.Char (toUpper, isHexDigit)
 import Data.Sequence.Internal.Sorting (QList(Nil))
 
 -- Q#01
@@ -30,21 +30,43 @@ data Square = X | O | Empty
 
 
 -- Q#07
-
+--Defining a 
 data GameState = Xwon | Owon | Tie | In_Progress
  deriving(Eq,Show)
 
 -- Q#08
-
+--Defining synonyms and their types
+type Player = Square
+type Row = [Square]
+type Line = [Square]
+type Board = [Row]
+type Move = (Int, Int)
 -- Q#09
 
-getFirstPlayer = undefined
+getFirstPlayer :: Bool -> Player 
+getFirstPlayer isX = if isX then X else O 
 
-getFirstPlayer_ = undefined
+getFirstPlayer_ :: Bool -> Player
+getFirstPlayer_ isX 
+    | isX == True = X
+    |otherwise = O
+
 
 -- Q#10
 
-showGameState = undefined
+showGameState = GameState -> String
+showGameState gState = case gState of
+    X -> "X Won the game"
+    O-> "O Won the game"
+    Tie -> "The game is a tie"
+    In_Progress -> "The game is in progress"
+    _
+getStarted_Case t = case t of   
+    "fire" -> "Charmander"
+    "water" -> "Squirtel"
+    "grass" -> "Bulbasaur"
+    _       -> "Pikachu"
+
 
 -- Q#11
 
