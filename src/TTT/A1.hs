@@ -31,7 +31,8 @@ data Square = X | O | Empty
 
 -- Q#07
 
-data GameState
+data GameState = Xwon | Owon | Tie | In_Progress
+ deriving(Eq,Show)
 
 -- Q#08
 
