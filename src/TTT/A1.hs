@@ -26,7 +26,7 @@ _SEP_ = ['_','|','_']
 -- Q#06
 
 data Square = X| O|Nil
- deriving show
+ --deriving show
 
 -- Q#07
 
