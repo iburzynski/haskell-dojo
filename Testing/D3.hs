@@ -9,7 +9,7 @@ x = "a"   -- list of characters
 -- picachu = ("Pikachu", 25)
 
 data Pokemon = Bulbasaur | Charmander | Squirtle | Pikachu --define this like a new data type e.g Bool
---     deriving Show  -- allow us to show this one the screen
+    deriving Show  -- allow us to show this one to the screen
 data Trainer = Ash | Misty | Brock
 data Colour = Red | Blue | Green
 
