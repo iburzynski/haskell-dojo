@@ -71,4 +71,7 @@ switchPlayer x = x
 
 -- Q#12
 
-showSquare = undefined
+showSquare = Square -> String
+showSquare X =  "X"
+showSquare O = "O"
+showSquare Empty = "_"
