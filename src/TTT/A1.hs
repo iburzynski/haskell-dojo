@@ -1,3 +1,5 @@
+{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
+{-# HLINT ignore "Redundant bracket" #-}
 module TTT.A1 where
 
 import Data.Char (toUpper, isHexDigit)
@@ -48,30 +50,29 @@ getFirstPlayer isX = if isX then X else O
 
 getFirstPlayer_ :: Bool -> Player
 getFirstPlayer_ isX 
-    | isX == True = X
+    | isX = X
     |otherwise = O
 
 
 -- Q#10
 
-showGameState = GameState -> String
+showGameState :: GameState -> String
 showGameState gState = case gState of
-    X -> "Player X Won the game"
-    O-> "Player O Won the game"
+    Xwon -> "Player X Won the game"
+    Owon -> "Player O Won the game"
     Tie -> "The game is a tie"
     In_Progress -> "The game is in progress"
-    _           -> 
 
 -- Q#11
 
-switchPlayer = Player -> Player
+switchPlayer :: Player -> Player
 switchPlayer X = O
 switchPlayer O = X
 switchPlayer x = x
 
 -- Q#12
 
-showSquare = Square -> String
+showSquare :: Square -> String
 showSquare X =  "X"
 showSquare O = "O"
 showSquare Empty = "_"
