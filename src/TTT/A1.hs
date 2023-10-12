@@ -19,7 +19,7 @@ convertRowIndex  rowValue = fromEnum (toUpper(rowValue)) - 65
 
 -- Q#04
 
-_INVALID_MOVE_ = (-1,-1)
+_INVALID_MOVE_ = [-1,-1]
 
 -- Q#05
 
