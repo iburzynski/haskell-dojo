@@ -26,13 +26,13 @@ _INVALID_MOVE_ = (-1,-1)
 _SEP_ = ['_','|','_']
 
 -- Q#06
-
+-- defining a variant called Square with three constructors
 data Square = X | O | Empty 
  deriving (Eq,Show)
 
 
 -- Q#07
---Defining a 
+--Defining a type called GameState with three constructors
 data GameState = Xwon | Owon | Tie | In_Progress
  deriving(Eq,Show)
 
@@ -43,8 +43,9 @@ type Row = [Square]
 type Line = [Square]
 type Board = [Row]
 type Move = (Int, Int)
--- Q#09
 
+-- Q#09
+-- define functions 
 getFirstPlayer :: Bool -> Player 
 getFirstPlayer isX = if isX then X else O 
 
